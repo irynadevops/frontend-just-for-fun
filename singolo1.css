@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0; 
+  height: 100vh;
+  font-family: "Lato-Light", Verdana, sans-serif;
+
+}
+
+.wrap {
+  max-width: 1020px;
+}
+
+.container {
+  position: relative;
+  margin: 0 41px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.active-link {
+  color: #f06c64;
+}
+
+.header {
+  height: 7.7%;
+  background: #2D303A;
+  border-bottom: solid 6px #323746;
+}
+
+.header-navigation {
+  position: relative;
+   width: 100%;
+}
+
+h1 {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 24.2902px;
+  font-weight: bold;
+  font-family: "Lato-Regular", Verdana, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -0.077rem;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-top: 42.08px;
+  padding-right: 13px;
+  padding-left: 13px;
+ 
+  font-weight: 400;
+  font-size: 11.4px;
+  letter-spacing: 0.0087rem;
+  color: #ffffff;
+  font-family: "Lato-Semibold", Verdana, sans-serif;
+  text-transform: uppercase;
+ 
+}
+
+.navigation li:first-child {
+  padding-left: 0;
+}
+.navigation li:last-child {
+  padding-right: 0;
+}
+
+.navigation li a:hover,
+.navigation li a:active {
+ color: #f06c64;
+}
+
+a,
+a:hover{
+    color: inherit;
+    text-decoration: none;
+  }
+
+.navigation li + li::before {
+  display: inline-block;
+  content: " ";
+  position: absolute;
+  top: 49.05px;
+  width: 2px;
+  height: 2px;
+  margin-left: -15px;
+  background: #494e62;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  
+}
+
+.slider {
+  height:  50.46%;
+  background: #F06C64;
+  border-bottom: solid 6px #EA676B;
+}
+
+
+.slider-phones {
+  flex-wrap: wrap;
+  margin: 0 71px;
+  padding: 53px 0 58px;
+}
+
+.phone {
+  align-self: center;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.our-services {
+  flex-wrap: wrap;
+  height: 415px;
+  padding-top: 44px;
+  padding-bottom: 35px;
+  background: #f2f2f2;
+  /* line-height: 19px; */
+}
+
+.bottom-line {
+  width: 1020px;
+  height: 6px;
+  background-color:  #ffffff;;
+}
+
+.service-item {
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: -17px;
+}
+
+.icon {
+  width: 60px;
+  height: 59px;
+  padding-top: 15.5px;
+}
+
+.our-services-title {
+  font-weight: 400;
+  font-size: 29.6188px;
+  line-height: 18px;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  color: #666d89;
+  letter-spacing: 0.33px;
+}
+
+.our-services-description {
+  padding-right: 11px;
+  width: 970px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Lato-Light", Verdana, sans-serif;
+  color: #767e9e;
+  letter-spacing: -0.053px;
+}
+
+.service-item-text{
+  padding-left: 18px;
+}
+
+.service-item-text h3 {
+  font-weight: 400;
+  font-size: 17.7713px;
+  line-height: 6px;
+  letter-spacing: 0.22px;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  color: #666d89;
+}
+
+.service-item-text p {
+  margin: 0 0 18px 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-family: "Lato-Light", Verdana, sans-serif;
+  text-align: justify;
+  letter-spacing: -0.37px;
+  color: #767e9e;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("./assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Semibold";
+  src: url("./assets/fonts/Lato-Semibold.ttf");
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .slider{
+    display: none;
+  }
+
+  .header{
+    max-height: 10%;
+  }
+
+  .our-services {
+    height: max-content;
+  }
+
+  .service-item{
+    flex-wrap: wrap;
+  }
+
+ .our-services-title,
+ .our-services-description {
+   font-size: inherit;
+   width: inherit;
+   text-align: justify;
+ }
+
+ .service-item-text p, 
+ .service-item-text h3{
+  font-size: inherit/2;
+ }
+
+ .service-item-text h3 {
+  line-height: 19px;
+ }
+
+ .icon {
+   padding-left: 40px;
+  }
+
+ .service-item-text {
+   text-align: center;
+ 
+ }
+}
+
+
