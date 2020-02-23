@@ -186,14 +186,15 @@ a:hover{
 
 .service-item-text p {
   margin: 0 0 18px 0;
-  font-weight: 600;
-  font-size: 12px;
+  word-spacing: 1px;
+  font-weight: 500;
+  font-size: 12.2px;
   line-height: 22px;
   overflow: hidden;
   text-overflow: ellipsis; 
   font-family: "Lato-Light", Verdana, sans-serif;
   text-align: justify;
-  letter-spacing: -0.37px;
+  letter-spacing: -0.2612px;
   color: #767e9e;
 }
 
