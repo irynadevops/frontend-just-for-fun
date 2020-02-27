@@ -26,12 +26,11 @@ body {
 }
 
 .header {
-  height: 7.7%;
   background: #2D303A;
   border-bottom: solid 6px #323746;
 }
 
-.header-navigation {
+.header__navigation {
   position: relative;
    width: 100%;
 }
@@ -151,7 +150,7 @@ a:hover{
   padding-top: 15.5px;
 }
 
-.our-services-title {
+.our-services__title {
   font-weight: 400;
   font-size: 29.6188px;
   line-height: 18px;
@@ -160,7 +159,7 @@ a:hover{
   letter-spacing: 0.33px;
 }
 
-.our-services-description {
+.our-services__description {
   padding-right: 11px;
   width: 970px;
   font-weight: 500;
@@ -171,11 +170,11 @@ a:hover{
   letter-spacing: -0.053px;
 }
 
-.service-item-text{
+.service-item__text{
   padding-left: 18px;
 }
 
-.service-item-text h3 {
+.service-item__text h3 {
   font-weight: 400;
   font-size: 17.7713px;
   line-height: 6px;
@@ -184,7 +183,7 @@ a:hover{
   color: #666d89;
 }
 
-.service-item-text p {
+.service-item__text p {
   margin: 0 0 18px 0;
   word-spacing: 1px;
   font-weight: 500;
@@ -236,19 +235,19 @@ a:hover{
     flex-wrap: wrap;
   }
 
- .our-services-title,
- .our-services-description {
+ .our-services__title,
+ .our-services__description {
    font-size: inherit;
    width: inherit;
    text-align: justify;
  }
 
- .service-item-text p, 
- .service-item-text h3{
+ .service-item__text p, 
+ .service-item__text h3{
   font-size: inherit/2;
  }
 
- .service-item-text h3 {
+ .service-item__text h3 {
   line-height: 19px;
  }
 
@@ -256,7 +255,7 @@ a:hover{
    padding-left: 40px;
   }
 
- .service-item-text {
+ .service-item__text {
    text-align: center;
  
  }
